@@ -44,7 +44,8 @@ artifacts:
     location: 'gs://my-cloud-build-bucket/$BUILD_ID'
     paths: ['artifacts.tar.gz']
 
-
+options:
+  logging: CLOUD_LOGGING_ONLY
 
 # - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:slim'
 #   volumes:
